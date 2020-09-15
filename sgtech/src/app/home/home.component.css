@@ -1,0 +1,38 @@
+
+span{
+    margin-top: 10px;
+    font-family: 'Gravitas One', cursive;
+    font-size: 40px;
+}
+
+.btn-round{
+    border-radius: 25px;
+    margin-top: 15px;
+    height: 50px;
+
+}
+.iconDetails {
+   float:right; 
+} 
+   
+.container2 {
+    width:270px;
+    height:auto;
+    padding:1%;
+}
+h2{margin:0}
+
+.brandName{
+    color:blue;
+}
+.left {
+    float:left;
+    width:300px;
+    margin-top: 100px;
+}
+.right {
+    
+    /* float:right;
+    margin-top: 10px;
+    width:10px; */
+}
