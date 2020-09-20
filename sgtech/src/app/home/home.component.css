@@ -1,38 +1,184 @@
-
-span{
-    margin-top: 10px;
-    font-family: 'Gravitas One', cursive;
-    font-size: 40px;
+/* **************LIGHT*********** */
+.box{
+    background-color:rgb(253, 245, 237);
+    /* background-color: rgb(250, 184, 108); */
+    margin-top: 500px;
+    width: 100%;
+    height: 150px;
+    border-radius: 25px;
+    box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: inset 3em 3em 8em rgba(231, 173, 139, 0.781) ,0em 0em 8em  rgba(31, 29, 28, 0.575),0em 0em 8em  black; */
+    /* box-shadow: inset 3em 3em 8em rgba(238, 131, 10, 0.63); */
 }
+ .features-icons-item:hover{  
+   -webkit-box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.32);
+   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.32);
+ }
+ #feature{ 
+    margin-top: 50px;
+ }
+ .features-icons-item{
+   margin: 10px;
+   width: 75%;
+   background-color:rgb(253, 245, 237);
+   /* background-color: rgb(250, 184, 108); */
+   border-radius: 10px;
+   height: 90%;
+   text-align: center;
+ }
 
-.btn-round{
+ .lead{
+   text-shadow: 1px 1px 2px black, 0 0 1em rgb(253, 245, 237), 0 0 0.2em rgb(253, 245, 237);
+   color: rgb(10, 10, 10);
+   font: 1.5em Georgia, serif;
+ }
+ li{
+    list-style: none;
+    color: black;
+    text-shadow: 2px 2px 5px  #5f595980;
+    font-family: 'Gravitas One', cursive;
+    font-size: 30px;
+    text-align: left;
+ }
+ .btn-round{
     border-radius: 25px;
     margin-top: 15px;
     height: 50px;
-
-}
-.iconDetails {
-   float:right; 
-} 
-   
-.container2 {
+  
+ }
+ .iconDetails {
+   float:right;
+ }
+  
+ .container2 {
     width:270px;
     height:auto;
     padding:1%;
-}
-h2{margin:0}
-
-.brandName{
-    color:blue;
-}
-.left {
+ }
+ h2{margin:0}
+  
+ .brandName{
+    font-size: 50px;
+    width: 600px;
+    /* font-family: 'Pacifico', cursive; */
+    text-shadow: 2px 2px 5px  #fcf8f867;
+    color: darkgreen ;
+ }
+ .left {
     float:left;
     width:300px;
     margin-top: 100px;
-}
-.right {
-    
-    /* float:right;
+ }
+ .right {  
+    float:right;
     margin-top: 10px;
-    width:10px; */
-}
+    width:10px;
+ }
+ 
+
+
+
+ 
+
+ .feature-area {
+   position: relative;
+   z-index: 1;
+ }
+ 
+ .feature-area .single-feature {
+   padding: 35px 30px;
+   border-radius: 8px;
+   background:rgb(253, 245, 237);
+   position: relative;
+   -webkit-transition: all 0.3s ease-out 0s;
+   transition: all 0.3s ease-out 0s;
+   overflow: hidden;
+   text-align: center;
+   margin-bottom: 30px;
+ }
+ 
+ .feature-area .single-feature:hover {
+   /* -webkit-box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.32); */
+   /* box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.32); */
+   box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ 
+ .feature-area .single-feature .feature-icon {
+   margin-bottom: 15px;
+ }
+ 
+ .feature-area .single-feature .feature-icon i {
+   font-size: 56px;
+   line-height: 56px;
+   color: #542DED;
+ }
+ 
+ .feature-area .single-feature .feature-content h4 {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 28px;
+   margin-bottom: 20px;
+ }
+ 
+ .feature-area .single-feature .feature-content p {
+   color: #868AAA;
+ }
+ 
+ .icon-style {
+   width: 45px;
+   height: 45px;
+   border-radius: 5px;
+   margin-bottom: 30px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   font-size: 20px;
+   -webkit-transition: all 0.3s ease-out 0s;
+   transition: all 0.3s ease-out 0s;
+ }
+
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #000000;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ 
+ .dropdown-content a {
+   color: rgb(255, 255, 255);
+   padding: 12px 16px;
+   display: block;
+   text-align: left;
+ }
+
+ /* .dropbtn {
+   display: inline-block;
+   text-align: center;
+   text-decoration: none;
+ } */
+ 
+ /* .dropdown-content a:hover {
+    background-color: #f1f1f1;
+   } */
+ 
+ .dropdown:hover .dropdown-content {
+   display: block;
+   width: 500px;
+   border-radius: 10px;
+ }
+
+ #vids{
+    margin-top: 50px;
+    height: 400px;
+ }
+ #carouselExampleIndicators{
+    height: 400px;
+ }

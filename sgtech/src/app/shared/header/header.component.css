@@ -1,7 +1,11 @@
 .navbar{
 	height: 100px;
 	background-color: white;
-	border-bottom: 0.5px solid rgb(252, 243, 243);
+	/* border-bottom: 0.5px solid rgba(17, 16, 16, 0.171); */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.nav-link{
+	color: white;
 }
 
 .nav-cart{
