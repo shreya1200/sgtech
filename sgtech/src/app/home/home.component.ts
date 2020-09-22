@@ -11,9 +11,9 @@ export class HomeComponent implements OnInit {
   initial_invoice = 0;
   max_invoice = 95000;
   initial_cities = 0;
-  max_cities = 95;
+  max_cities = 145;
   initial_products = 0;
-  max_products = 45;
+  max_products = 95;
   interval;
   constructor() { }
 
