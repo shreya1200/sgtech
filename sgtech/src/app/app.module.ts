@@ -24,6 +24,10 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { LoginComponent } from './signIn-opt/login/login.component';
 import { RegisterComponent } from './signIn-opt/register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductListComponent } from './products/product-list/product-list.component';
+import { DetailsComponent } from './products/details/details.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     FooterComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    SidebarComponent,
+    ProductsComponent,
+    ProductListComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
