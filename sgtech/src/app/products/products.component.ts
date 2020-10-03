@@ -1,25 +1,34 @@
 import { Component, OnInit } from '@angular/core';
-import { Data } from '../products/data';
+import { ActivatedRoute } from '@angular/router';
+import { Product } from '../services/product.model';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  styleUrls: ['./products.component.css'],
+  providers: [ProductService]
 })
 export class ProductsComponent implements OnInit {
 
-  
-  data: Data[] = [
-    {id:"abc123", productname:"abc", description:"abc", price:123, image:'abc'},
-    {id:"qwe123", productname:"qwe", description:"qwe", price:123, image:'abc'},
-    {id:"asd123", productname:"asd", description:"asd", price:123, image:'abc'},
-    {id:"zxc123", productname:"zxc", description:"zxc", price:123, image:'abc'},
-    {id:"bnm123", productname:"bnm", description:"bnm", price:123, image:'abc'},
-    {id:"jkl123", productname:"jkl", description:"jkl", price:123, image:'abc'}
-  ];
+  product: Product[];
 
-  constructor() { }
+  constructor(private route: ActivatedRoute,public productService:ProductService) { }
 
   ngOnInit(): void {
+    this.route.params.subscribe(params => {
+      this.productService.getProductsByCategory(params.category,params.subcategory).subscribe((res) =>{
+        //console.log(res);
+        this.product = res;
+        //this.product.push(res);
+        console.log(this.product);
+      });
+    });
+
+  }
+
+  navigate(id: string)
+  {
+    console.log(id);
   }
 }

@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
+  
 })
 export class HomeComponent implements OnInit {
   initial_cust = 0;
@@ -15,9 +16,11 @@ export class HomeComponent implements OnInit {
   initial_products = 0;
   max_products = 95;
   interval;
-  constructor() { }
+  constructor(public router:Router) { }
+
 
   ngOnInit(): void {
+
     this.interval = setInterval( ()=> {
 
       if(this.initial_cust <= this.max_cust){
@@ -49,6 +52,17 @@ this.interval = setInterval( ()=> {
     } else {
     clearInterval(this.interval)
   }
-  }, 100)
+  }, 100);
+
+  
 }
+
+  navigate(category:string,subcategory:string)
+  {
+    console.log(category+subcategory)
+    this.router.navigate(['/products',category,subcategory])
+    //console.log(category+subcategory);
+    
+    
+  }
 }

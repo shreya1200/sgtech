@@ -10,7 +10,7 @@ var product = require('../model/product.js');
 
 //to get all product details
 //http://localhost:3000/
-router.get('', (req,res) =>
+router.get('/', (req,res) =>
 {
     //res.send('api works');
     product.find({}).exec(function(err,doc){
@@ -42,27 +42,26 @@ router.get('/:id', (req, res) =>
 });
 
 //get product detail with specific category
-//http://localhost:3000/category/
-router.get('/products/:category/', (req, res) =>
-{
-    var category = req.params.category;
+//http://localhost:3000/products/category/brand
 
-    product.find({category : category}).exec(function(err,doc){
+router.get('/products/:category/:brand', (req, res) =>{
+    var category = req.params.category;
+    var brand = req.params.brand;
+    product.find({category : category, brand:brand}).exec(function(err,doc){
         if(err)
         {
             console.log("error: "+JSON.stringify(err));
         }
         else{
-            res.json(doc);
+                res.json(doc);
         }
-    })
-
+    });
 });
 
-router.get('*', (req, res) =>
-{
-    return res.status(400).send('Error 404 Page not found!');
-});
+// router.get('*', (req, res) =>
+// {
+//     return res.status(400).send('Error 404 Page not found!');
+// });
 
 
 
