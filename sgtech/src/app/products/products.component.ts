@@ -12,6 +12,7 @@ import { ProductService } from '../services/product.service';
 export class ProductsComponent implements OnInit {
 
   product: Product[];
+  category:String;
 
   constructor(private route: ActivatedRoute,public productService:ProductService) { }
 
@@ -20,8 +21,7 @@ export class ProductsComponent implements OnInit {
       this.productService.getProductsByCategory(params.category,params.subcategory).subscribe((res) =>{
         //console.log(res);
         this.product = res;
-        //this.product.push(res);
-        console.log(this.product);
+        this.category = params.category;
       });
     });
 
