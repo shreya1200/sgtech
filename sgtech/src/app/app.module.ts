@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { ProductsComponent } from './products/products.component';
 import { DetailsComponent } from './products/details/details.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DetailsComponent } from './products/details/details.component';
     FooterComponent,
     SidebarComponent,
     ProductsComponent,
-    DetailsComponent
+    DetailsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

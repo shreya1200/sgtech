@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from '../services/product.model';
 import { ProductService } from '../services/product.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-products',
@@ -27,6 +28,7 @@ export class ProductsComponent implements OnInit {
 
   }
 
+  
   navigate(id: string)
   {
     console.log(id);
