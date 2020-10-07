@@ -1,0 +1,26 @@
+.card_row{
+    background-color: #f7f7f7;
+}
+h2{
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    font-family: "Work Sans", sans-serif;
+}
+.my_card{
+    box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper-box{
+    margin-top: 5%;
+    overflow-x: hidden !important;
+}
+.my_card_b{
+    box-shadow: 0 0 98px 6px rgba(0, 0, 0, 0.2); 
+    border-radius: 50%; 
+}

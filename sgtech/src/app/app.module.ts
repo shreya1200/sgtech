@@ -6,7 +6,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { AdminRoutingModule } from './routes/admin-routing.module';
 import { AdminModule } from './routes/admin.module';
 
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -17,6 +17,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { ProductsComponent } from './products/products.component';
 import { DetailsComponent } from './products/details/details.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AboutComponent } from './about/about.component';
     SidebarComponent,
     ProductsComponent,
     DetailsComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,9 @@ import { AboutComponent } from './about/about.component';
     RouterModule,
     AdminModule,
     AdminRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    BrowserModule, 
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
