@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "sgtech"
+  "defaultProject": "sgtech",
+  "cli": {
+    "analytics": "ae69a473-99df-43b6-b1ba-e84d57c563fe"
+  }
 }

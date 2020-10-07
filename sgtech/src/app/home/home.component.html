@@ -157,11 +157,16 @@
 				<div class="col-lg-2 dropdown">
                     <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-2">
                         <img src="../../assets/images/icons/Ecommerce-Barcode-Scanner-icon.png" height=60;>
-                        <h6>Scanners</h6>
+                        <h6>Barcode Scanners</h6>
                         <div class="dropdown-content">
-							<a href="#" (click)="navigate('Scanner','Honeywell')">Honeywell Barcode Scanner</a>
-							<a (click)="navigate('Scanner','Honeywell')">Honeywell Wireless Barcode Scanner</a>
-							<a (click)="navigate('Scanner','Restol')">Restol Barcode Scanner - LS 450</a>
+							<a (click)="navigate('Barcode Scanner','Honeywell')">Honeywell Barcode Scanners</a>
+							<!-- <a (click)="navigate('Scanner','Honeywell')">Honeywell Wireless Barcode Scanner</a> -->
+							<!-- <a (click)="navigate('Scanner','Restol')">Restol Barcode Scanner - LS 450</a> -->
+							<a (click)="navigate('Barcode Scanner','Motorola')">Motorola Barcode Scanners</a>
+							<a (click)="navigate('Barcode Scanner','Zebra')">Zebra Barcode Scanners</a>
+							<a (click)="navigate('Barcode Scanner','Datalogic')">Datalogic Barcode Scanners</a>
+							<a (click)="navigate('Barcode Scanner','TVS')">TVS Barcode Scanners</a>
+							<a (click)="navigate('Barcode Scanner','Argox')">Argox Barcode Scanners</a>
 						</div>
                     </div>
 				</div>
@@ -170,10 +175,10 @@
                         <img src="../../assets/images/icons/thermalroll.jpg" height=60;>
                         <h6>Thermal Rolls</h6>
                         <div class="dropdown-content">
-							<a (click)="navigate('Thermal Rolls','Balaji')">Balaji Machine Roll</a>
-							<a (click)="navigate('Thermal Rolls','Printed Thermal Receipt Billing Rolls')">Printed Thermal Receipt Billing Rolls</a>
-							<a (click)="navigate('Thermal Rolls','Plain Paper Rolls')">Plain Paper Rolls</a>
-							<a (click)="navigate('Thermal Rolls','Printed Thermal Receipt Rolls')">Thermal Receipt Rolls</a>
+							<a (click)="navigate('Thermal Roll','Balaji')">Balaji Machine Roll</a>
+							<a (click)="navigate('Thermal Roll','SG Technologies')">Printed Thermal Receipt Billing Rolls</a>
+							<!-- <a (click)="navigate('Thermal Rolls','Plain Paper Rolls')">Plain Paper Rolls</a>
+							<a (click)="navigate('Thermal Rolls','Printed Thermal Receipt Rolls')">Thermal Receipt Rolls</a> -->
 						</div>
                     </div>
 				</div>
@@ -182,9 +187,9 @@
                         <img src="../../assets/images/icons/software.jpg" height=60;>
                         <h6>Software Products</h6>
                         <div class="dropdown-content">
-							<a href="#">Inward Outward Management Software</a>
-							<a href="#">Shree Lipi Software</a>
-							<a href="#">SMS Sending Software</a>
+							<a (click)="navigate('Software Products','Easy Shop')">Inward Outward Management Software</a>
+							<a (click)="navigate('Software Products','Shree')">Shree Lipi Software</a>
+							<a (click)="navigate('Software Products','Self')">SMS Sending Software</a>
 						</div>
                     </div>
 				</div>
@@ -193,9 +198,9 @@
                         <img src="../../assets/images/icons/cash drawer.png" height=60;>
                         <h6>Cash Drawer</h6>
                         <div class="dropdown-content">
-							<a href="#">Cash Drawer</a>
-							<a href="#">Posiflex Cash Drawer</a>
-							<a href="#">TVS Cash Drawer</a>							
+							<a (click)="navigate('Cash Drawer','TVS')">Cash Drawer</a>
+							<a (click)="navigate('Cash Drawer','Posiflex')">Posiflex Cash Drawer</a>
+							<a (click)="navigate('Cash Drawer','TVS')">TVS Cash Drawer</a>							
 						</div>
                     </div>
 				</div>
@@ -204,9 +209,9 @@
                         <img src="../../assets/images/icons/pole display2-icon.png" height=60;>
                         <h6>Pole Display</h6>
                         <div class="dropdown-content">
-							<a href="#">Pole Display</a>
-							<a href="#">Posiflex Pole Display</a>
-							<a href="#">TVS Pole Display</a>
+							<a (click)="navigate('Pole Display','Local Brand')">Pole Display</a>
+							<a (click)="navigate('Pole Display','Posiflex')">Posiflex Pole Display</a>
+							<a (click)="navigate('Pole Display','TVS')">TVS Pole Display</a>
 						</div>
                     </div>
 				</div>
@@ -215,8 +220,9 @@
                         <img src="../../assets/images/icons/Drives-iPhone-Metro-icon.png" height=60;>
                         <h6>Mobile App Development</h6>
                         <div class="dropdown-content">
-							<a href="#">Mobile App Development</a>
-							<a href="#">E-commerce Application Development</a>
+							<a (click)="navigate('Mobile App Development','Easy Shop')">Mobile App Development</a>
+							<a (click)="navigate('Mobile App Development','Easy Shop')">E-Commerce Application Development</a>
+							<a (click)="navigate('Mobile App Development','Easy Shop')">E-Commerce Application Development</a>
 						</div>
                     </div>
 				</div>
@@ -225,11 +231,16 @@
                         <img src="../../assets/images/icons/printer-icon.png" height=60;>
                         <h6>Barcode Printers</h6>
                         <div class="dropdown-content">
-							<a href="#">TST TTP 244 Pro Barcode Printer</a>
-							<a href="#">Citizen Barcode Printer CLS620</a>
+							<a (click)="navigate('Barcode Printer','TSC')">TSC Barcode Printers</a>
+							<a (click)="navigate('Barcode Printer','Citizen')">Citizen Barcode Printers</a>
+							<a (click)="navigate('Barcode Printer','Zebra')">Zebra Barcode Printers</a>
+							<a (click)="navigate('Barcode Printer','Argox')">Argox Barcode Printers</a>
+							<a (click)="navigate('Barcode Printer','SATO')">SATO Barcode Printers</a>
+							<a (click)="navigate('Barcode Printer','Honeywell')">Honeywell Barcode Printers</a>
+							<!-- <a href="#">Citizen Barcode Printer CLS620</a>
 							<a href="#">Zebra Barcode Printer</a>
 							<a href="#">Citizen Barcode Printer CLS631</a>
-							<a href="#">TSC Barcode Printer TA210</a>
+							<a href="#">TSC Barcode Printer TA210</a> -->
 						</div>
                     </div>
 				</div>
@@ -238,11 +249,11 @@
                         <img src="../../assets/images/icons/Barcode lable-icon (1).png" height=60;>
                         <h6>Barcode Labels</h6>
                         <div class="dropdown-content">
-							<a href="#">Barcode Labels</a>
-							<a href="#">Barcode Stickers</a>
-							<a href="#">Pre-printed Barcode Labels</a>
-							<a href="#">Plain Barcode Labels</a>
-							<a href="#">Thermal Labels</a>
+							<a (click)="navigate('Barcode Label','SG Technologies')">Barcode Labels</a>
+							<a (click)="navigate('Barcode Label','SG Technologies')">Barcode Stickers</a>
+							<a (click)="navigate('Barcode Label','SG Technologies')">Pre-printed Barcode Labels</a>
+							<a (click)="navigate('Barcode Label','SG Technologies')">Plain Barcode Labels</a>
+							<a (click)="navigate('Barcode Label','SG Technologies')">Thermal Labels</a>
 						</div>
                     </div>
 				</div>
@@ -250,12 +261,18 @@
                     <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-2">
                         <img src="../../assets/images/icons/Printing-Printer-icon.png" height=60;>
                         <h6>Thermal Printers</h6>
-                        <div class="dropdown-content">
-							<a href="#">Thermal Printer</a>
-							<a href="#">Epson Thermal Printer TMT82</a>
-							<a href="#">Citizen Label Printer CTS621</a>
-							<a href="#">TVS RP45 Thermal Printers</a>
-							<a href="#">Thermal Printer TM300</a> 
+						<div class="dropdown-content">
+							<a (click)="navigate('Thermal Printer','Epson')">Epson Thermal Printers</a>
+							<a (click)="navigate('Thermal Printer','TVS')">TVS Thermal Printers</a>
+							<a (click)="navigate('Thermal Printer','Local Brand')">Local Brand Thermal Printers</a>
+							<a (click)="navigate('Thermal Printer','Posiflex')">Posiflex Thermal Printers</a>
+							<a (click)="navigate('Thermal Printer','Citizen')">Citizen Thermal Printers</a>
+							<a (click)="navigate('Thermal Printer','TCS')">TCS Thermal Printers</a>
+							<!-- <a href="#">Thermal Printer</a> -->
+							<!-- <a href="#">Epson Thermal Printer TMT82</a> -->
+							<!-- <a href="#">Citizen Label Printer CTS621</a> -->
+							<!-- <a href="#">TVS RP45 Thermal Printers</a> -->
+							<!-- <a href="#">Thermal Printer TM300</a>  -->
 						</div>
                     </div>
 				</div>
@@ -264,11 +281,12 @@
                         <img src="../../assets/images/icons/barcode ribbonicon.png" height=60;>
                         <h6>Barcode Ribbons</h6>
                         <div class="dropdown-content">
-							<a (click)="navigate('Barcode Ribbons','Barcode Ribbons')">Barcode Ribbons</a>
-							<a (click)="navigate('Barcode Ribbons','Barcode Ribbons Wax')">Barcode Ribbons Wax</a>
-							<a (click)="navigate('Barcode Ribbons','Barcode Ribbons Wax Resins')">Barcode Ribbons Wax Resins</a>
-							<a (click)="navigate('Barcode Ribbons','Barcode Ribbons Resins')">Barcode Ribbons Resin</a>
-							<a (click)="navigate('Barcode Ribbons','Barcode Ribbons Wash')">Barcode Ribbons Wash</a>
+							<a (click)="navigate('Barcode Ribbons','SG Technologies')">Barcode Ribbons</a>
+							<a (click)="navigate('Barcode Ribbons','SG Technologies')">Barcode Ribbons Wax</a>
+							<a (click)="navigate('Barcode Ribbons','SG Technologies')">Barcode Ribbons Wax Resins</a>
+							<a (click)="navigate('Barcode Ribbons','SG Technologies')">Barcode Ribbons Resin</a>
+							<!-- <a (click)="navigate('Barcode Ribbons','SG Technologies')">Barcode Ribbons Wash</a>
+							<a (click)="navigate('Barcode Ribbons','SG Technologies')">Wax Barcode Ribbons Thermal Transfer</a> -->
 						</div>
                     </div>
 				</div>
@@ -277,10 +295,10 @@
                         <img src="../../assets/images/icons/storefront.svg" height=60;>
                         <h6>Retail Management Software</h6>
                         <div class="dropdown-content">
-							<a (click)="navigate('Retail Management Software','Online Shopping System')">Online Shopping System</a>
-							<a (click)="navigate('Retail Management Software','Barcode Software')">Barcode Software</a>
-							<a (click)="navigate('Retail Management Software','Easy Shop Software for Glossary')">Easy Shop Software for Glossary</a>
-							<a (click)="navigate('Retail Management Software','Billing Software for Patanjali')">Billing Software for Patanjali</a>
+							<a (click)="navigate('Retail Management Software','Easy Shop')">Online Shopping System</a>
+							<a (click)="navigate('Retail Management Software','Priyam')">Retail ERP Software For Mall</a>
+							<!-- <a (click)="navigate('Retail Management Software','Easy Shop Software for Glossary')">Easy Shop Software for Glossary</a>
+							<a (click)="navigate('Retail Management Software','Billing Software for Patanjali')">Billing Software for Patanjali</a> -->
 						</div>
                     </div>
 				</div>
@@ -289,9 +307,9 @@
                         <img src="../../assets/images/icons/3d-modeling.svg" height=60;>
                         <h6>Software Services</h6>
                         <div class="dropdown-content">
-							<a (click)="navigate('Software Services','Retail Billing Software')">Retail Billing Software</a>
-							<a (click)="navigate('Software Services','Website Development')">Website Development</a>
-							<a (click)="navigate('Software Services','E-commerce site development')">E-commerce site development</a>
+							<a (click)="navigate('Software Services','Easy Shop')">Easy Shop Software Services</a>
+							<a (click)="navigate('Software Services','Priyam')">Priyam Software Services</a>
+							<!-- <a (click)="navigate('Software Services','E-commerce site development')">E-commerce site development</a> -->
 						</div>
                     </div>
 				</div>	
