@@ -26,6 +26,7 @@ router.get('/', (req,res) =>
 
 //get product detail with specific id
 //http://localhost:3000/_id
+
 router.get('/:id', (req, res) =>
 {
     if(!ObjectId.isValid(req.params.id))
@@ -33,13 +34,18 @@ router.get('/:id', (req, res) =>
 
         product.findById(req.params.id, (err, doc) =>{
         if(!err)
-        {res.send(doc);}
-        else
-        console.log('error in getting details' + JSON.stringify(err));
-    
+        {
+            res.send(doc);
+        }
+        else {
+            console.log('error in getting details' + JSON.stringify(err));
+        }    
     });
 
 });
+
+
+
 
 //get product detail with specific category
 //http://localhost:3000/products/category/brand
