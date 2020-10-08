@@ -24,3 +24,12 @@ html{
     box-shadow: 0 0 98px 6px rgba(0, 0, 0, 0.2); 
     border-radius: 50%; 
 }
+.add1:hover{
+    box-shadow: 1px 10px 18px green;
+}
+.add:hover{
+    box-shadow: 5px 10px green;
+}
+a:hover{
+    color: green;
+}
