@@ -1,3 +1,11 @@
+#playstore:hover{
+  box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#gradientgrey{
+    background: linear-gradient(to bottom, #808080 0%, #ffffff 61%);
+}
+
 .text-block {
   position: absolute;
   bottom: 20px;
@@ -163,4 +171,105 @@ h2{margin:0}
  width: 300px;
  border-radius: 10px;
  overflow: hidden;
+}
+
+
+/* Reviews */
+@keyframes slidy { 
+	0%  { left: 0%; }
+	05% { left: 0%; }
+	10% { left: -100%; }
+	15% { left: -100%; }
+	20% { left: -200%; }
+	25% { left: -200%; } 
+	30% { left: -300%; }
+	35% { left: -300%; }
+  40% { left: -400%; }
+  45% { left: -400%; }
+  50% { left: -500%; }
+  55% { left: -500%; }
+  60% { left: -600%; }
+  65% { left: -600%; }
+  70% { left: -700%; }
+  75% { left: -700%; }
+  80% { left: -800%; }
+  85% { left: -800%; }
+  90% { left: -900%; }
+  100% { left: -900%; }
+}
+div#captioned-gallery {
+	width: 80%;
+  overflow: hidden;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  */
+}
+figure { 
+  /* width: 100%;
+  height: 100%; */
+  margin: 0; 
+}
+figure.slider {
+	position: relative;
+	width: 1000%;
+	font-size: 0;
+	animation: 60s slidy infinite; 
+}
+figure.slider figure { 
+	width: 10%;
+  height: auto;
+  display: inline-block;
+	position: inherit;
+}
+@media screen and (max-width: 500px) { 
+	figure.slider figure figcaption {
+		font-size: 1.2rem;
+	}
+}
+
+figure.slider img {
+	width: 30%;
+	height: auto;
+  float: left;
+  margin-left: 5%;
+  /* margin-top: 5%; */
+  margin-bottom: 5%;
+}
+figcaption {
+	color: black;
+	width: 100%;
+  font-size: small;
+  margin-right: 10%;
+  text-align: center;
+  padding-right: 5%;
+}
+ /* Caption review */
+ blockquote {
+  font-family: Georgia, serif;
+  font-size: small;
+  font-style: italic;
+  color: #383838;
+}
+
+blockquote:before {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 4em;
+  line-height: 1;
+  content: "\201C";
+}
+blockquote:after {
+  font-family: Georgia, serif;
+  float:inline-end;
+  font-size:4em;
+  line-height: 1;
+  content: "\201D";
+}
+
+blockquote cite {
+  color: #999999;
+  font-size: small;
+  display: block;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
 }
