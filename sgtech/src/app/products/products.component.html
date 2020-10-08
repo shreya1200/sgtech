@@ -6,48 +6,133 @@
           <br>
           <hr>
           <li>
-              <a href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Retail Management<br>Software</a>
-              <ul class="collapse list-unstyled" id="pageSubmenu1">
-                  <li>
-                      <a href="#">Page 1</a>
-                  </li>
-                  <li>
-                      <a href="#">Page 2</a>
-                  </li>
-                  <li>
-                      <a href="#">Page 3</a>
-                  </li>
-              </ul>
+            <div class="dropdown">
+                <button class="dropbtn">Retial Management System</button>
+                <div class="dropdown-content">
+                    <a (click)="navigate('Retail Management Software','Easy Shop')">Online Shopping System</a>
+                    <a (click)="navigate('Retail Management Software','Priyam')">Retail ERP Software For Mall</a>
+                </div>
+            </div>    
           </li>
-          
           <li>
-              <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Software Products</a>
-              <ul class="collapse list-unstyled" id="pageSubmenu2">
-                  <li>
-                      <a href="#">Page 1</a>
-                  </li>
-                  <li>
-                      <a href="#">Page 2</a>
-                  </li>
-                  <li>
-                      <a href="#">Page 3</a>
-                  </li>
-              </ul>
+            <div class="dropdown">
+                <button class="dropbtn">Software Products</button>
+                <div class="dropdown-content">
+                    <a (click)="navigate('Software Products','Easy Shop')">Inward Outward Management Software</a>
+                    <a (click)="navigate('Software Products','Shree')">Shree Lipi Software</a>
+                    <a (click)="navigate('Software Products','Self')">SMS Sending Software</a>
+                </div>
+            </div>    
           </li>
-          
           <li>
-              <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Software Services</a>
-              <ul class="collapse list-unstyled" id="pageSubmenu3">
-                  <li>
-                      <a href="#">Page 1</a>
-                  </li>
-                  <li>
-                      <a href="#">Page 2</a>
-                  </li>
-                  <li>
-                      <a href="#">Page 3</a>
-                  </li>
-              </ul>
+            <div class="dropdown">
+                <button class="dropbtn">Software Services</button>
+                <div class="dropdown-content">
+                    <a (click)="navigate('Software Services','Easy Shop')">Easy Shop Software Services</a>
+                    <a (click)="navigate('Software Services','Priyam')">Priyam Software Services</a>
+                </div>
+            </div>    
+          </li>
+          <li>
+            <div class="dropdown">
+                <button class="dropbtn">Mobile App Development</button>
+                <div class="dropdown-content">
+                    <a (click)="navigate('Mobile Apps Development','Easy Shop')">Mobile App Development</a>
+                    <a (click)="navigate('Mobile Apps Development','Easy Shop')">E-Commerce Application Development</a>
+                    <a (click)="navigate('Mobile Apps Development','Easy Shop')">E-Commerce Application Development</a>
+                </div>
+            </div>    
+          </li>
+          <li>
+            <div class="dropdown">
+                <button class="dropbtn">Thermal Rolls</button>
+                <div class="dropdown-content">
+                    <a (click)="navigate('Thermal Roll','Balaji')">Balaji Machine Roll</a>
+					<a (click)="navigate('Thermal Roll','SG Technologies')">Printed Thermal Receipt Billing Rolls</a>
+                </div>
+            </div>    
+          </li>
+          <li>
+            <div class="dropdown">
+                <button class="dropbtn">Barcode Labels</button>
+                <div class="dropdown-content">
+                    <a (click)="navigate('Barcode Label','SG Technologies')">Barcode Labels</a>
+                    <a (click)="navigate('Barcode Label','SG Technologies')">Barcode Stickers</a>
+                    <a (click)="navigate('Barcode Label','SG Technologies')">Pre-printed Barcode Labels</a>
+                    <a (click)="navigate('Barcode Label','SG Technologies')">Plain Barcode Labels</a>
+                    <a (click)="navigate('Barcode Label','SG Technologies')">Thermal Labels</a>
+                </div>
+            </div>    
+          </li>
+          <li>
+            <div class="dropdown">
+                <button class="dropbtn">Barcode Ribbons</button>
+                <div class="dropdown-content">
+                    <a (click)="navigate('Barcode Ribbons','SG Technologies')">Barcode Ribbons</a>
+                    <a (click)="navigate('Barcode Ribbons','SG Technologies')">Barcode Ribbons Wax</a>
+                    <a (click)="navigate('Barcode Ribbons','SG Technologies')">Barcode Ribbons Wax Resins</a>
+                    <a (click)="navigate('Barcode Ribbons','SG Technologies')">Barcode Ribbons Resin</a>
+                </div>
+            </div>    
+          </li>
+          <li>
+            <div class="dropdown">
+                <button class="dropbtn">Barcode Printers</button>
+                <div class="dropdown-content">
+                    <a (click)="navigate('Barcode Printer','TSC')">TSC Barcode Printers</a>
+                    <a (click)="navigate('Barcode Printer','Citizen')">Citizen Barcode Printers</a>
+                    <a (click)="navigate('Barcode Printer','Zebra')">Zebra Barcode Printers</a>
+                    <a (click)="navigate('Barcode Printer','Argox')">Argox Barcode Printers</a>
+                    <a (click)="navigate('Barcode Printer','SATO')">SATO Barcode Printers</a>
+                    <a (click)="navigate('Barcode Printer','HoneyWell')">Honeywell Barcode Printers</a>
+                </div>
+            </div>    
+          </li>
+          <li>
+            <div class="dropdown">
+                <button class="dropbtn">Thermal Printers</button>
+                <div class="dropdown-content">
+                    <a (click)="navigate('Thermal Printer','Epson')">Epson Thermal Printers</a>
+                    <a (click)="navigate('Thermal Printer','TVS')">TVS Thermal Printers</a>
+                    <a (click)="navigate('Thermal Printer','Local Brand')">Local Brand Thermal Printers</a>
+                    <a (click)="navigate('Thermal Printer','Posiflex')">Posiflex Thermal Printers</a>
+                    <a (click)="navigate('Thermal Printer','Citizen')">Citizen Thermal Printers</a>
+                    <a (click)="navigate('Thermal Printer','TCS')">TCS Thermal Printers</a>
+                </div>
+            </div>    
+          </li>
+          <li>
+            <div class="dropdown">
+                <button class="dropbtn">Barcode Scanners</button>
+                <div class="dropdown-content">
+                    <a (click)="navigate('Barcode Scanner','Honeywell')">Honeywell Barcode Scanners</a>
+                    <a (click)="navigate('Barcode Scanner','Motorola')">Motorola Barcode Scanners</a>
+                    <a (click)="navigate('Barcode Scanner','Zebra')">Zebra Barcode Scanners</a>
+                    <a (click)="navigate('Barcode Scanner','Datalogic')">Datalogic Barcode Scanners</a>
+                    <a (click)="navigate('Barcode Scanner','TVS')">TVS Barcode Scanners</a>
+                    <a (click)="navigate('Barcode Scanner','Argox')">Argox Barcode Scanners</a>
+                </div>
+            </div>    
+          </li>
+          <li>
+            <div class="dropdown">
+                <button class="dropbtn">Cash Drawer</button>
+                <div class="dropdown-content">
+                    <a (click)="navigate('Cash Drawer','TVS')">Cash Drawer</a>
+                    <a (click)="navigate('Cash Drawer','Posiflex')">Posiflex Cash Drawer</a>
+                    <a (click)="navigate('Cash Drawer','TVS')">TVS Cash Drawer</a>
+                </div>
+            </div>    
+          </li>
+          <li>
+            <div class="dropdown">
+                <button class="dropbtn">Pole Display</button>
+                <div class="dropdown-content">
+                    <a (click)="navigate('Pole Display','Local Brand')">Pole Display</a>
+                    <a (click)="navigate('Pole Display','Posiflex')">Posiflex Pole Display</a>
+                    <a (click)="navigate('Pole Display','TVS')">TVS Pole Display</a>
+                </div>
+            </div>    
           </li>
       </ul>
   </nav>
