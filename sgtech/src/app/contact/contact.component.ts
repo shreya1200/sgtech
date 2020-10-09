@@ -18,12 +18,13 @@ export class ContactComponent implements OnInit {
     this.FormData = this.builder.group({
       Fullname: new FormControl('', [Validators.required]),
       Email: new FormControl('', [Validators.compose([Validators.required, Validators.email])]),
+      Phone: new FormControl('', [Validators.required]),
       Comment: new FormControl('', [Validators.required])
     });
   }
   onSubmit(FormData) {
     console.log(FormData);
-    // mail.send_email(FormData.Email,FormData.Comment,FormData.Fullname);
+    // mail.send_email(FormData.Email,FormData.Comment,FormData.Fullname,FormData.Phone);
   }
 
 }
