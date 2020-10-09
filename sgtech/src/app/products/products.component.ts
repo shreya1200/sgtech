@@ -4,6 +4,7 @@ import { Product } from '../services/product.model';
 import { ProductService } from '../services/product.service';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-products',
@@ -19,6 +20,13 @@ export class ProductsComponent implements OnInit {
   constructor(private route: ActivatedRoute,public productService:ProductService,public router:Router) { }
 
   ngOnInit(): void {
+    
+    //Toggle Click Function
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+
     this.route.params.subscribe(params => {
       this.productService.getProductsByCategory(params.category,params.subcategory).subscribe((res) =>{
         //console.log(res);
