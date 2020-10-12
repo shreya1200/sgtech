@@ -38,7 +38,7 @@ async function send_mail(my_mail, my_text, my_name){
         service: 'gmail',
         auth: {
             user: 'sahilmorankar2000@gmail.com',
-            pass: 'Sahil@2000gmail'
+            pass: 'yourpass'
         }
     });
         
