@@ -24,7 +24,7 @@ export class ProductService {
 
   //to get product based on category and subcategory
   getProductsByCategory(category:string,subcategory:string): Observable<Product[]>{
-    console.log(this.baseURL,category,subcategory);
+    // console.log(this.baseURL,category,subcategory);
     return this.http.get<Product[]>(this.baseURL+'products/'+category+'/'+subcategory);
   }
 

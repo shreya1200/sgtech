@@ -25,16 +25,16 @@ export class AppPageComponent implements AfterViewInit {
   }
 
   start(canvas:HTMLCanvasElement,ctx:CanvasRenderingContext2D,img):any {
-    confetti.create(canvas)({
-      shapes: ['square'],
-      particleCount: 1000,
-      spread: 900,
-      origin: {
-          y: (1),
-          x: (0.5)
-      }
+    // confetti.create(canvas)({
+    //   shapes: ['square'],
+    //   particleCount: 1000,
+    //   spread: 900,
+    //   origin: {
+    //       y: (1),
+    //       x: (0.5)
+    //   }
       
-    });
+    // });
     ctx.drawImage(img,0,0,canvas.width,canvas.height);
     ctx.stroke();
     console.log(img);

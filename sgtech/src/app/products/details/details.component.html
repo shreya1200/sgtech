@@ -1,141 +1,308 @@
-<div class="wrapper">
-  <!-- Sidebar Holder -->
-  <nav id="sidebar">
-    <ul class="list-unstyled components">
-        <h4 style="margin-left: 10%;"> Our Products <br>And Services</h4>
-        <br>
-        <hr>
-        <li>
-            <a href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Retail Management<br>Software</a>
-            <ul class="collapse list-unstyled" id="pageSubmenu1">
+<div class="wrapper1">
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+          <div class="list-group list-group-flush">
+            <ul class="list-unstyled components">
+                <h4 style="margin-left: 10%;"> Our Products <br>And Services</h4>
+                <br>
+                <hr>
                 <li>
-                    <a href="#">Page 1</a>
-                </li>
-                <li>
-                    <a href="#">Page 2</a>
-                </li>
-                <li>
-                    <a href="#">Page 3</a>
-                </li>
-            </ul>
-        </li>
-        
-        <li>
-            <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Software Products</a>
-            <ul class="collapse list-unstyled" id="pageSubmenu2">
-                <li>
-                    <a href="#">Page 1</a>
-                </li>
-                <li>
-                    <a href="#">Page 2</a>
-                </li>
-                <li>
-                    <a href="#">Page 3</a>
-                </li>
-            </ul>
-        </li>
-        
-        <li>
-            <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Software Services</a>
-            <ul class="collapse list-unstyled" id="pageSubmenu3">
-                <li>
-                    <a href="#">Page 1</a>
-                </li>
-                <li>
-                    <a href="#">Page 2</a>
-                </li>
-                <li>
-                    <a href="#">Page 3</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</nav>
 
-  <!-- Page Content Holder -->
-  <div id="content">
-      <nav>
-          <div class="container-fluid">
-              <button type="button" id="sidebarCollapse" class="navbar-btn">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-              </button>
-          </div>
-      </nav>
+                    <div class="dropdown">
+                        <button class="dropbtn">Retial Management System</button>
+                        <div class="dropdown-content">
+                            <a (click)="navigate('Retail Management Software','Easy Shop')">Online Shopping System</a>
+                            <a (click)="navigate('Retail Management Software','Priyam')">Retail ERP Software For Mall</a>
+                        </div>
+                    </div>
+                </li>
+                    
 
-      <div>
-          <div style="text-align: center;">
-              <h1>{{ product.productname }}</h1>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Software Products</button>
+                        <div class="dropdown-content">
+                            <a (click)="navigate('Software Products','Easy Shop')">Inward Outward Management Software</a>
+                            <a (click)="navigate('Software Products','Shree')">Shree Lipi Software</a>
+                            <a (click)="navigate('Software Products','Self')">SMS Sending Software</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Software Services</button>
+                        <div class="dropdown-content">
+                            <a (click)="navigate('Software Services','Easy Shop')">Easy Shop Software Services</a>
+                            <a (click)="navigate('Software Services','Priyam')">Priyam Software Services</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Mobile App Development</button>
+                        <div class="dropdown-content">
+                            <a (click)="navigate('Mobile Apps Development','Easy Shop')">Mobile App Development</a>
+                            <a (click)="navigate('Mobile Apps Development','Easy Shop')">E-Commerce Application
+                                Development</a>
+                            <a (click)="navigate('Mobile Apps Development','Easy Shop')">E-Commerce Application
+                                Development</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Thermal Rolls</button>
+                        <div class="dropdown-content">
+                            <a (click)="navigate('Thermal Roll','Balaji')">Balaji Machine Roll</a>
+                            <a (click)="navigate('Thermal Roll','SG Technologies')">Printed Thermal Receipt Billing
+                                Rolls</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Barcode Labels</button>
+                        <div class="dropdown-content">
+                            <a (click)="navigate('Barcode Label','SG Technologies')">Barcode Labels</a>
+                            <a (click)="navigate('Barcode Label','SG Technologies')">Barcode Stickers</a>
+                            <a (click)="navigate('Barcode Label','SG Technologies')">Pre-printed Barcode Labels</a>
+                            <a (click)="navigate('Barcode Label','SG Technologies')">Plain Barcode Labels</a>
+                            <a (click)="navigate('Barcode Label','SG Technologies')">Thermal Labels</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Barcode Ribbons</button>
+                        <div class="dropdown-content">
+                            <a (click)="navigate('Barcode Ribbons','SG Technologies')">Barcode Ribbons</a>
+                            <a (click)="navigate('Barcode Ribbons','SG Technologies')">Barcode Ribbons Wax</a>
+                            <a (click)="navigate('Barcode Ribbons','SG Technologies')">Barcode Ribbons Wax Resins</a>
+                            <a (click)="navigate('Barcode Ribbons','SG Technologies')">Barcode Ribbons Resin</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Barcode Printers</button>
+                        <div class="dropdown-content">
+                            <a (click)="navigate('Barcode Printer','TSC')">TSC Barcode Printers</a>
+                            <a (click)="navigate('Barcode Printer','Citizen')">Citizen Barcode Printers</a>
+                            <a (click)="navigate('Barcode Printer','Zebra')">Zebra Barcode Printers</a>
+                            <a (click)="navigate('Barcode Printer','Argox')">Argox Barcode Printers</a>
+                            <a (click)="navigate('Barcode Printer','SATO')">SATO Barcode Printers</a>
+                            <a (click)="navigate('Barcode Printer','HoneyWell')">Honeywell Barcode Printers</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Thermal Printers</button>
+                        <div class="dropdown-content">
+                            <a (click)="navigate('Thermal Printer','Epson')">Epson Thermal Printers</a>
+                            <a (click)="navigate('Thermal Printer','TVS')">TVS Thermal Printers</a>
+                            <a (click)="navigate('Thermal Printer','Local Brand')">Local Brand Thermal Printers</a>
+                            <a (click)="navigate('Thermal Printer','Posiflex')">Posiflex Thermal Printers</a>
+                            <a (click)="navigate('Thermal Printer','Citizen')">Citizen Thermal Printers</a>
+                            <a (click)="navigate('Thermal Printer','TCS')">TCS Thermal Printers</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Barcode Scanners</button>
+                        <div class="dropdown-content">
+                            <a (click)="navigate('Barcode Scanner','Honeywell')">Honeywell Barcode Scanners</a>
+                            <a (click)="navigate('Barcode Scanner','Motorola')">Motorola Barcode Scanners</a>
+                            <a (click)="navigate('Barcode Scanner','Zebra')">Zebra Barcode Scanners</a>
+                            <a (click)="navigate('Barcode Scanner','Datalogic')">Datalogic Barcode Scanners</a>
+                            <a (click)="navigate('Barcode Scanner','TVS')">TVS Barcode Scanners</a>
+                            <a (click)="navigate('Barcode Scanner','Argox')">Argox Barcode Scanners</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Cash Drawer</button>
+                        <div class="dropdown-content">
+                            <a (click)="navigate('Cash Drawer','TVS')">Cash Drawer</a>
+                            <a (click)="navigate('Cash Drawer','Posiflex')">Posiflex Cash Drawer</a>
+                            <a (click)="navigate('Cash Drawer','TVS')">TVS Cash Drawer</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Pole Display</button>
+                        <div class="dropdown-content">
+                            <a (click)="navigate('Pole Display','Local Brand')">Pole Display</a>
+                            <a (click)="navigate('Pole Display','Posiflex')">Posiflex Pole Display</a>
+                            <a (click)="navigate('Pole Display','TVS')">TVS Pole Display</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+    
           </div>
-      </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-light" id="menu-toggle"> <img src="../../assets/images/lines.png" alt="X"> </button>
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item"><h1> {{ product.productname }} </h1></li>
+                </ul>
+            </nav>
+            
+            <!--Main layout-->
+                <main class="mt-5 pt-4">
+                    <div class="container">
       
-      <!--Main layout-->
-          <main class="mt-5 pt-4">
-              <div class="container">
+                        <!--Grid row-->
+                        <div class="row">
+                            
+                            <!--Grid column-->
+                            <div class="col-md-4 mb-2">
+        
+                            <img [src]=selectedImage class="img-fluid" alt="">
+                            <br><br><br><br>
+                            
+                            <div class="row container">
+                                <div *ngFor="let i of all_images">
+                                    <button (click)="mainImage(i)"><img [src]=i class="img-fluid" height="48px" width="48px" alt=""></button>
+                                </div>
+                            </div>
+        
+                            </div>
+                            <!--Grid column-->
+        
+                            <!--Grid column-->
+                            <div class="col-md-6 mb-4">
+        
+                            <!--Content-->
+                            <div>
+                                <br>
+                                <h4 style="color: black;">Service Details : </h4>
+                                
+                                <div style="color: black;">
+                                <p style="color: black;" [innerHTML] = "pdetailsTag"></p>
+                                </div>
 
-              <!--Grid row-->
-              <div class="row">
-                  
-                  <!--Grid column-->
-                  <div class="col-md-4 mb-2">
+                                <br>
 
-                  <img [src]="product.image" class="img-fluid" alt="">
-                  <br><br><br><br>
-                  <button class="btn btn-primary">Yes I'm Interested</button>
-                  
+                                <button class="btn btn-primary"><a href="https://wa.me/+91 9373344421?text=Hi" target="_blank">Yes I'm Interested</a></button>
+        
+                            </div>
+                            <!--Content-->
+        
+                            </div>
+                            <!--Grid column-->
+        
+                        </div>
+                        <!--Grid row-->
+                        <br>
+                        <hr>
+                        <br>
+                        <!--Grid row-->
+                        <div class="row justify-content-center container">
+        
+                            <!--Grid column-->
+                            <div class="text-center">
+        
+                            <h4 class="h4" style="color: black;">Description</h4>
+        
+                            <div class="row">
+                                <span style="color: black;">{{ product.description }}</span>
+                            </div>
+                            
+                            <!--Grid column-->
+        
+                            </div>
+                            
+        
+                        </div>
+                        <!--Grid row-->
+      
+                    </div>
+                </main>
+          
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+</div>
 
-                  </div>
-                  <!--Grid column-->
-
-                  <!--Grid column-->
-                  <div class="col-md-6 mb-4">
-
-                  <!--Content-->
-                  <div>
-                      <p class="lead"   style="color: black;">
-                          Approx. <del>Rs. 3000</del> {{ product.price }} / Unit
-                      
-                      </p>
-                      <br>
-                      <h4 style="color: black;">Service Details : </h4>
-                      
-                      <div style="color: black;">
-                        <p [innerHTML] = "pdetailsTag"></p>
-                      </div>
-
-                  </div>
-                  <!--Content-->
-
-                  </div>
-                  <!--Grid column-->
-
-              </div>
-              <!--Grid row-->
-              <br>
-              <hr>
-              <br>
-              <!--Grid row-->
-              <div class="row justify-content-center">
-
-                  <!--Grid column-->
-                  <div class="text-center">
-
-                  <h4 class="h4" style="color: black;">Description</h4>
-
-                  <p style="color: black;">
-                    <br>
-                    {{ product.description }}
-                  </p>
-                  <!--Grid column-->
-
-                  </div>
-                  
-
-              </div>
-              <!--Grid row-->
-
-          </div>
-      </main>
-  </div>
+<br><br>
+<div class="top-content">
+	<div class="container-fluid">
+		<div id="carousel-example" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner row w-100 mx-auto" role="listbox">
+				<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+					<div>
+                        <div class="card mb-4 shadow-sm">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="../../assets/images/barcode-ribbons-resin-250x250.jpg">
+                            <div class="card-body">
+                                <h4 class="card-text"><b>Barcode Ribbons Resin</b></h4>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-success" style="font-size: smaller;"
+                                                [routerLink]="['/details', '5f845e4e13a025226c3ead74']" >Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-success" style="font-size: smaller;">Get Price</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let productItem of all">
+                    <div>
+                        <div class="card mb-4 shadow-sm">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" [src]="productItem.image">
+                            <div class="card-body">
+                                <h4 class="card-text"><b>{{ productItem.productname }}</b></h4>
+                                <!-- <p class="card-text">{{ productItem.description | slice:0:50 }}</p> -->
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-success" style="font-size: smaller;"
+                                                [routerLink]="['/details', productItem._id]" >Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-success" style="font-size: smaller;"><a href="https://wa.me/+91 9373344421?text=Hi" target="_blank">Get Price</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
 </div>

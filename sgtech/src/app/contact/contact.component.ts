@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators, NgForm } from '@angular/forms'
+import { Subscription } from 'rxjs';
+import { MailService } from '../services/mail.service';
 // import * as mail from 'src/email.js';
 
 @Component({
@@ -11,8 +13,11 @@ import { FormGroup, FormBuilder, FormControl, Validators, NgForm } from '@angula
 
 
 export class ContactComponent implements OnInit {
+  
   FormData: FormGroup;
-  constructor(private builder: FormBuilder) { }
+  public subscription: Subscription;
+  
+  constructor(private sendmailservice: MailService, private builder: FormBuilder, ) { }
 
   ngOnInit(): void {
     this.FormData = this.builder.group({
@@ -25,6 +30,17 @@ export class ContactComponent implements OnInit {
   onSubmit(FormData) {
     console.log(FormData);
     // mail.send_email(FormData.Email,FormData.Comment,FormData.Fullname,FormData.Phone);
+    this.subscription = this.sendmailservice.sendEmail(this.FormData.value).
+
+    subscribe(data => {
+      //let msg = data['message']
+      //alert(msg);
+      console.log(data, "success");
+    }, error => {
+      //console.error(error, "error");
+    } );
+
+    this.FormData.reset();
   }
 
 }
