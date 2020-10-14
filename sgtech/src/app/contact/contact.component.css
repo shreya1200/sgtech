@@ -33,6 +33,9 @@ html{
 .addy:hover{
     box-shadow: 1px 10px 10px #fe0000;
 }
+.addi:hover{
+    box-shadow: 1px 10px 10px #e1aed7;
+}
 .add:hover{
     box-shadow: 5px 10px green;
 }

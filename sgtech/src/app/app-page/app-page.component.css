@@ -3,4 +3,9 @@
         #mycanvas {
             display: block;
         }
-        
+        #with_canvas{
+            background-image: url(../../assets/images/app.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
