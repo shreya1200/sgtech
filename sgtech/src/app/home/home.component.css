@@ -11,6 +11,12 @@
   box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 10px 6px 20px 10px rgba(0, 0, 0, 0.19);
   /* box-shadow: inset 3em 3em 8em rgba(0, 0, 0, 0.2) ,0em 0em 8em  rgba(31, 29, 28, 0.575),0em 0em 0em  black; */
 }
+.my_card{
+  box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card_row{
+  background-color: #f7f7f7;
+}
 .bg-text1 {
   /* background-color: rgb(0,0,0); Fallback color */
   /* background: linear-gradient(to left, black 0%, #ffffff 80%); */
