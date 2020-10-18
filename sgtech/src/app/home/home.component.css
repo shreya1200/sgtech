@@ -97,10 +97,15 @@
 }
 li{
   color: black;
-  text-shadow: 2px 2px 5px  #5f595980;
-  font-family: 'Gravitas One', cursive;
-  font-size: 20px;
+  /* text-shadow: 2px 2px 5px  #5f595980; */
+  /* font-family: 'Gravitas One', cursive; */
+  color: #868AAA;
   text-align: left;
+}
+#head{
+  font-weight: 500;
+  line-height: 28px;
+  font-size: 30px;
 }
 .btn-round{
   border-radius: 25px;
@@ -210,9 +215,12 @@ h2{margin:0}
 } */
 
 .dropdown-content a:hover {
-  background-color: #542DED;
+  background-color: rgb(233, 233, 233);
+  color:#4bbb5c;
+  text-decoration: underline;
   overflow: hidden;
  }
+
 
 .dropdown:hover .dropdown-content {
  display: block;
@@ -322,11 +330,17 @@ blockquote cite:before {
   content: "\2014 \2009";
 }
 
-.my:hover {
+/* .my:hover {
   background-color: white;
   box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+} */
 .my2{
   border-radius: 20px;
   box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.my_card{
+  border-radius: 30px;
+  height: 70px; 
+  width: auto;
+  
 }
