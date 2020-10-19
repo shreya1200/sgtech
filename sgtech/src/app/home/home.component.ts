@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import * as $ from 'jquery';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -20,8 +22,8 @@ export class HomeComponent implements OnInit {
 
 
   ngOnInit(): void {
-
-    this.interval = setInterval( ()=> {
+    
+  this.interval = setInterval( ()=> {
 
       if(this.initial_cust <= this.max_cust){
              this.initial_cust+=20;

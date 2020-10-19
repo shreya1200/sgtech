@@ -1,0 +1,58 @@
+/* @import '../../../../node_modules/nib' */
+a{
+  color: green;
+}
+body{
+  height:100vh; 
+  width:100vw;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:white;
+  font-size:16px;
+  font-family:'proxima nova', 'open sans', 'Helvetica', sans-serif
+}
+
+.Marquee{
+  /* background:linear-gradient(-135deg, #008ed9, #8b00db); */
+  /* width:85vw; */
+  background-color: white;
+  box-sizing:border-box;
+  padding:1em;
+  color:white;
+  font-weight:200;
+  display: flex;
+  align-items:center;
+  overflow:hidden;
+}
+.Marquee-content{
+    display:flex;
+    animation:marquee 25000s linear infinite running;
+}
+.Marquee-content:hover{
+  animation-play-state:paused;
+}
+  
+.Marquee-tag{
+  width:200px;
+  margin:0 .5em;
+  padding:.5em;
+  background:rgba(255, 255, 255, .1);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  transition:all .2s ease;
+}
+.Marquee-tag:hover{
+  background:rgba(255, 255, 255, .5);
+  transform:scale(1.1);
+  cursor:pointer;
+}
+    
+    
+@keyframes marquee{
+  0%
+    {transform:translateX(0);}
+  100%
+    {transform:translate(-11000%);}
+}

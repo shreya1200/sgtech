@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators, NgForm } from '@angular/forms'
 import { Subscription } from 'rxjs';
 import { MailService } from '../services/mail.service';
-// import * as mail from 'src/email.js';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-contact',
@@ -13,13 +13,18 @@ import { MailService } from '../services/mail.service';
 
 
 export class ContactComponent implements OnInit {
-  
+
   FormData: FormGroup;
   public subscription: Subscription;
   
   constructor(private sendmailservice: MailService, private builder: FormBuilder, ) { }
 
   ngOnInit(): void {
+    //scroll to top
+    $(document).ready(function(){
+      $(document).scrollTop(0);
+    })
+
     this.FormData = this.builder.group({
       Fullname: new FormControl('', [Validators.required]),
       Email: new FormControl('', [Validators.compose([Validators.required, Validators.email])]),

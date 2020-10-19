@@ -2,10 +2,13 @@
         * {margin: 0; padding: 0;}
         #mycanvas {
             display: block;
+            width: 100%;
+            height: auto;
         }
         #with_canvas{
+            
             background-image: url(../../assets/images/app.png);
             background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
+            background-size:contain;
+            background-position:center;
         }

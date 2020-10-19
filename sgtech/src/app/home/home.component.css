@@ -15,7 +15,7 @@
   box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card_row{
-  background-color: #f7f7f7;
+  background-color:white;
 }
 .bg-text1 {
   /* background-color: rgb(0,0,0); Fallback color */
@@ -196,8 +196,6 @@ h2{margin:0}
  background-color: #ffffff;
  min-width: 160px;
  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- z-index: 1;
- overflow: hidden;
 }
 
 .dropdown-content a {
@@ -227,6 +225,9 @@ h2{margin:0}
  width: 300px;
  border-radius: 10px;
  overflow: hidden;
+ /* change position absolute to revert */
+ position: relative;
+  z-index: 2;
 }
 
 
@@ -334,13 +335,10 @@ blockquote cite:before {
   background-color: white;
   box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } */
-.my2{
+.my2:hover{
   border-radius: 20px;
   box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .my_card{
   border-radius: 30px;
-  height: 70px; 
-  width: auto;
-  
 }

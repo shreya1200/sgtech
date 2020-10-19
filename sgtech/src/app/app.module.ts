@@ -19,6 +19,7 @@ import { DetailsComponent } from './products/details/details.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppPageComponent } from './app-page/app-page.component';
+import { SliderComponent } from './shared/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { AppPageComponent } from './app-page/app-page.component';
     DetailsComponent,
     AboutComponent,
     ContactComponent,
-    AppPageComponent
+    AppPageComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

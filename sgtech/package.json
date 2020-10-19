@@ -28,6 +28,7 @@
     "@types/jquery": "^3.5.2",
     "bootstrap": "^4.5.2",
     "jquery": "^3.4.1",
+    "nib": "^1.1.2",
     "nodemailer": "^6.4.13",
     "popper.js": "^1.16.1",
     "rxjs": "~6.5.4",
