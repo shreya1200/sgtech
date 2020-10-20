@@ -198,11 +198,12 @@
 <hr width="90%">
 <br>
 
-<div class="Marquee">
-    <div class="Marquee-content">
-        <div *ngFor="let productItem of all">
-            <div class="Marquee-tag">
-                <div class="card">
+<div class="Marquee" >
+    <div *ngFor ="let j of n">
+    <div class="Marquee-content"  >
+        <div *ngFor="let productItem of all ; let i = index"  >
+            <div class="Marquee-tag" >
+                <div class="card" >
                         <img class="bd-placeholder-img card-img-top" width="100%" height="225" [src]="productItem.image">
                         <div class="card-body">
                             <h4 class="card-text" style="color: black;"><b>{{ productItem.productname }}</b></h4>

@@ -37,8 +37,8 @@ async function send_mail(my_mail, my_text, my_name){
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'sahilmorankar2000@gmail.com',
-            pass: 'yourpass'
+            user: 'servicespriyamit@gmail.com',
+            pass: 'shubham*333'
         }
     });
         
@@ -51,8 +51,8 @@ async function send_mail(my_mail, my_text, my_name){
         */ 
         
     var mailOptions = {
-        from: 'sahilmorankar2000@gmail.com',
-        to: 'sahilmorankar2000@gmail.com',
+        from: 'servicespriyamit@gmail.com',
+        to: 'servicespriyamit@gmail.com',
         subject: my_name,
         text: my_text+ '    ' + my_mail
     };
@@ -66,7 +66,7 @@ async function send_mail(my_mail, my_text, my_name){
     });
 
     var mailOptions1 = {
-        from: 'sahilmorankar2000@gmail.com',
+        from: 'servicespriyamit@gmail.com',
         to: my_mail,
         subject: 'Priyam IT Services',
         text: 'Thanks For Visiting our website! We will get back to you soon.'

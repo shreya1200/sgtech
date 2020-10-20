@@ -18,6 +18,7 @@ export class DetailsComponent implements OnInit {
   category:String;
   all_images:String[];
   product: Product;
+  n:number[] = [1,2,3,4,5]
   all:Product[];
   
 

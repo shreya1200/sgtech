@@ -17,6 +17,7 @@ export class ProductsComponent implements OnInit {
   product: Product[];
   category:String;
   all:Product[];
+  n:number[] = [1,2,3,4,5];
   //firstproduct:Product;
   constructor(private route: ActivatedRoute,public productService:ProductService,public router:Router) { }
 
